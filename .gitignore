@@ -1,6 +1,7 @@
 # mma specific
 data/
 .vscode/
+code/test*.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
