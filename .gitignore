@@ -3,6 +3,8 @@ data/
 .vscode/
 code/test*.py
 
+*.amltemp
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
