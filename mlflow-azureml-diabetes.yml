@@ -1,0 +1,15 @@
+
+# yaml-language-server: $schema=https://azuremlsdk2.blob.core.windows.net/latest/commandJob.schema.json
+
+experiment_name: mlflow-azureml
+command: python train.py --data {inputs.data} 
+code:
+  directory: ./code/train/diabetes/
+environment: azureml:mlflow-azureml-diabetes:1
+compute:
+    target: azureml:aml-cluster
+inputs:
+  data:
+    data: azureml:diabetes_multiple:1
+    mode: download
+

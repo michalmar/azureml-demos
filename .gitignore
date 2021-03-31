@@ -4,6 +4,10 @@ data/
 code/test*.py
 
 *.amltemp
+*.amltmp
+aml_config/
+explanation/
+mlruns/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

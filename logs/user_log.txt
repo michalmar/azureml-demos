@@ -1,0 +1,51 @@
+[1]	valid_0's l1: 65.8211	valid_0's l2: 6105.77
+Training until validation scores don't improve for 5 rounds
+[2]	valid_0's l1: 65.5622	valid_0's l2: 6053.79
+[3]	valid_0's l1: 65.3047	valid_0's l2: 6002.82
+[4]	valid_0's l1: 65.0654	valid_0's l2: 5953.24
+[5]	valid_0's l1: 64.8129	valid_0's l2: 5904.35
+[6]	valid_0's l1: 64.5664	valid_0's l2: 5857.38
+[7]	valid_0's l1: 64.3249	valid_0's l2: 5809.65
+[8]	valid_0's l1: 64.0882	valid_0's l2: 5764.71
+[9]	valid_0's l1: 63.8544	valid_0's l2: 5718.75
+[10]	valid_0's l1: 63.6322	valid_0's l2: 5673.9
+[11]	valid_0's l1: 63.4115	valid_0's l2: 5631.83
+[12]	valid_0's l1: 63.1895	valid_0's l2: 5589.66
+[13]	valid_0's l1: 62.9683	valid_0's l2: 5546.54
+[14]	valid_0's l1: 62.754	valid_0's l2: 5507.17
+[15]	valid_0's l1: 62.5512	valid_0's l2: 5468.5
+[16]	valid_0's l1: 62.3411	valid_0's l2: 5429.95
+[17]	valid_0's l1: 62.1412	valid_0's l2: 5392.44
+[18]	valid_0's l1: 61.9359	valid_0's l2: 5355.25
+[19]	valid_0's l1: 61.7398	valid_0's l2: 5320.23
+[20]	valid_0's l1: 61.5296	valid_0's l2: 5283.66
+Did not meet early stopping. Best iteration is:
+[20]	valid_0's l1: 61.5296	valid_0's l2: 5283.66
+Mean Squared Error is 5283.662482198387
+<class 'azureml.exceptions._azureml_exception.WebserviceException'>: WebserviceException:
+	Message: Error, provided model name is invalid. It must only consist of letters, numbers, dashes, periods, or underscores, start with a letter or number, and be between 1 and 255 characters long.
+	InnerException None
+	ErrorResponse 
+{
+    "error": {
+        "message": "Error, provided model name is invalid. It must only consist of letters, numbers, dashes, periods, or underscores, start with a letter or number, and be between 1 and 255 characters long."
+    }
+}
+<traceback object at 0x7f1f61d0b588>
+Traceback (most recent call last):
+  File "<ipython-input-16-e3124e0958b1>", line 44, in <module>
+    original_model = run.register_model(model_name=model_file_name,model_path=model_file_name)
+  File "/anaconda/envs/azureml_py36/lib/python3.6/site-packages/azureml/core/run.py", line 2105, in register_model
+    model_name_validation(model_name)
+  File "/anaconda/envs/azureml_py36/lib/python3.6/site-packages/azureml/_model_management/_util.py", line 1123, in model_name_validation
+    raise WebserviceException('Error, provided model name is invalid. It must only consist of letters, '
+azureml.exceptions._azureml_exception.WebserviceException: WebserviceException:
+	Message: Error, provided model name is invalid. It must only consist of letters, numbers, dashes, periods, or underscores, start with a letter or number, and be between 1 and 255 characters long.
+	InnerException None
+	ErrorResponse 
+{
+    "error": {
+        "message": "Error, provided model name is invalid. It must only consist of letters, numbers, dashes, periods, or underscores, start with a letter or number, and be between 1 and 255 characters long."
+    }
+}
+
